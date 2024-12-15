@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>觉知智慧与意识发展评估</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="welcome-page" class="page active">
+            <div class="page-content fade-in">
+                <h1>觉知智慧<br>与意识发展评估</h1>
+                <div class="intro">
+                    <p>本问卷通过日常生活场景评估您的意识发展状态。</p>
+                    <p>请基于您最真实的感受和可能的反应选择答案。</p>
+                    <p>答案无对错之分，重要的是真实反映您的状态。</p>
+                </div>
+                <button id="start-btn" class="btn">开始测试</button>
+            </div>
+        </div>
+
+        <div id="question-page" class="page">
+            <div class="page-content">
+                <div class="progress-container">
+                    <div class="progress-bar">
+                        <div class="progress"></div>
+                    </div>
+                    <div class="progress-text">
+                        <span id="current-question">1</span> / <span id="total-questions">36</span>
+                    </div>
+                </div>
+                <h2 id="question-title"></h2>
+                <div id="options" class="options"></div>
+                <div class="navigation">
+                    <button id="prev-btn" class="btn btn-secondary">上一题</button>
+                    <button id="next-btn" class="btn">下一题</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="result-page" class="page">
+            <div class="page-content fade-in">
+                <h2>测评结果</h2>
+                <div class="score-circle">
+                    <div class="total-score">
+                        <span id="total-score">0</span>
+                        <span class="score-label">总分</span>
+                    </div>
+                </div>
+                <div class="level-description">
+                    <h3 id="level-title"></h3>
+                    <div id="level-detail"></div>
+                </div>
+                <div class="result-actions">
+                    <button id="restart-btn" class="btn">重新测试</button>
+                    <button id="share-btn" class="btn btn-secondary">分享结果</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/questions.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html> 
